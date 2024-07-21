@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
         <div className="flex gap-4">
           <a
             className="bg-[#B3FF77] px-[24px] py-[18px] rounded-[62px] text-black uppercase text-[18px] font-[700] tracking-widest inline-flex items-center justify-between gap-[10px]"
-            href="https://discord.gg/fuqJ3pcG3d"
+            href="https://discord.com/invite/NsjZBsSSEq"
             target="_blank"
           >
             <DiscordAlt size={26.4} /> Discord

@@ -202,7 +202,7 @@ export const RawSections = () => {
           <div className="flex gap-4">
             <a
               className="text-center bg-[#B3FF77] px-[24px] py-[18px] rounded-[62px] text-black uppercase text-[18px] font-[700] tracking-widest flex items-center justify-between mx-auto gap-[10px]"
-              href="https://discord.com/invite/movechess"
+              href="https://discord.com/invite/NsjZBsSSEq"
               target="_blank"
             >
               <DiscordAlt size={26.4} />
@@ -210,7 +210,7 @@ export const RawSections = () => {
             </a>
             <a
               className="bg-[#B3FF77] px-[24px] py-[18px] rounded-[62px] text-black uppercase text-[18px] font-[700] tracking-widest flex items-center justify-between gap-[10px]"
-              href="https://twitter.com/MoveChessLabs"
+              href="https://twitter.com/dechess_io"
               target="_blank"
             >
               <Twitter size={26.4} /> Twitter
