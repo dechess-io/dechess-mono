@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <div className="footer flex gap-[36px]">
-        <a target="_blank" href="https://docs.dechess.io/">
+        <a target="_blank" href="https://docs.dechess.io/dechess-on-telegram">
           ChessPapers
         </a>
         <a target="_blank" href="https://docsend.com/view/dihcs6pi5yajm5s3">
