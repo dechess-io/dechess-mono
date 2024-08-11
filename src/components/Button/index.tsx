@@ -1,8 +1,10 @@
 import React, { PropsWithChildren } from 'react'
 
 import { cn } from '@/lib/utils'
+import bgButton from '@/public/images/bg-button.svg'
 
 import Icons from '../Icons'
+import NextImage from '../NextImage'
 
 const Button: React.FC<
   PropsWithChildren<{
@@ -11,7 +13,6 @@ const Button: React.FC<
     disabled?: boolean
     hide?: boolean
     type?: 'button' | 'submit' | 'reset'
-    variant?: 'primary' | 'secondary'
     size?: 'medium' | 'large'
     loading?: boolean
   }>
@@ -23,7 +24,6 @@ const Button: React.FC<
   hide,
   type,
   loading,
-  variant = 'primary',
   size = 'medium'
 }) => {
   if (hide) {
@@ -33,25 +33,30 @@ const Button: React.FC<
     <button
       type={type || 'button'}
       className={cn(
-        'cursor-pointer rounded',
-        'flex items-center justify-center gap-2',
+        'cursor-pointer rounded font-planet relative flex items-center justify-center gap-2 group',
         className,
         {
-          'p-2.5': size === 'medium',
-          'px-8 py-4': size === 'large'
+          'w-[12rem] h-[3rem] lg:w-[14.813rem] lg:h-[4.625rem] text-normal': size === 'medium',
+          'w-[20.625rem] h-[5rem] text-xl': size === 'large'
         },
         {
-          'bg-white-fe text-2xl': variant === 'primary',
-          'bg-blue-300 active:bg-blue-300': disabled && variant === 'primary',
-          '': variant === 'secondary',
-          '': disabled && variant === 'secondary'
+          'bg-blue-300 active:bg-blue-300': disabled
         }
       )}
       onClick={onClick}
       disabled={loading || disabled}
     >
-      {loading ? <Icons.spinner className="animate-spin" size={20} /> : null}{' '}
-      {children}
+      <NextImage
+        src={bgButton}
+        width={237}
+        height={74}
+        className="w-full h-full"
+        alt="dechess-btn-background"
+      />
+      <span className="absolute inset-0 z-[1] text-black-1a flex justify-center items-center">
+        {loading ? <Icons.spinner className="animate-spin" size={20} /> : null}{' '}
+        {children}
+      </span>
     </button>
   )
 }
