@@ -11,7 +11,7 @@
   }
 
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 20%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -37,7 +37,7 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   }
-  
+
   /* Hide scrollbar for all elements */
   *::-webkit-scrollbar {
     display: none;
@@ -81,7 +81,28 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-stone-950 text-foreground;
+  }
+
+  .scroll-section {
+    scroll-margin-top: 6.5rem;
+  }
+
+  .bg-about {
+    background-image: url("/images/bg-about.svg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .bg-area {
+    background-image: url("/images/bg-area.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
