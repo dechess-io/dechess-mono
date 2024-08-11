@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+
+import About from '@/components/About'
+import Area from '@/components/Area'
 
 const HomeView = () => {
-  return <div>HomeView</div>
+  return (
+    <Fragment>
+      <About />
+      <Area />
+    </Fragment>
+  )
 }
 
 export default HomeView
