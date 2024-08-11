@@ -57,9 +57,10 @@ export default function NextImage({
           classNames?.image,
           status === 'loading' && cn('animate-pulse', classNames?.blur)
         )}
-        priority
         src={imgSrc}
         alt={alt}
+        blurDataURL="data:image/jpeg"
+        placeholder="blur"
         onLoad={() => setStatus('complete')}
         onError={() => {
           fallback && setImgSrc(fallback)
