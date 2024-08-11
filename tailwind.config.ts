@@ -27,8 +27,8 @@ const config = {
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
-          '9f': '#5F729F',
-          84: '#3E5384'
+          '4ff': '#67E4FF',
+          '6ff': '#14C6FF'
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -83,6 +83,16 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out'
+      },
+      fontSize: {
+        sm: '1.25rem',
+        normal: '1.5rem',
+        xl: '1.875rem',
+        '2xl': '2rem',
+        '3xl': '3.75rem'
+      },
+      fontFamily: {
+        planet: 'Planet Gamers'
       }
     }
   },
