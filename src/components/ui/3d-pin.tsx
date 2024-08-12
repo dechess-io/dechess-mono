@@ -2,8 +2,6 @@
 
 import React, { useState } from 'react'
 
-import Link from 'next/link'
-
 import { motion } from 'framer-motion'
 
 import { cn } from '@/lib/utils'
@@ -34,10 +32,7 @@ export const PinContainer = ({
 
   return (
     <div
-      className={cn(
-        'relative group/pin z-50',
-        containerClassName
-      )}
+      className={cn('relative group/pin z-50', containerClassName)}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
@@ -52,7 +47,7 @@ export const PinContainer = ({
           style={{
             transform: transform
           }}
-          className="absolute left-1/2 top-1/2 flex justify-start items-start rounded-2xl bg-black transition duration-700 overflow-hidden"
+          className="absolute left-1/2 top-1/2 flex justify-start items-start rounded-2xl transition duration-700 overflow-hidden"
         >
           <div className={cn(' relative z-50 ', className)}>{children}</div>
         </div>

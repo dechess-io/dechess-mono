@@ -55,6 +55,7 @@ const config = {
           foreground: 'hsl(var(--card-foreground))'
         },
         black: {
+          DEFAULT: '#000000',
           12: '#121212',
           '1a': '#1E1C1A'
         },

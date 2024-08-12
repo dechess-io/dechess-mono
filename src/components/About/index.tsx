@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="dechess-about"
-      className="bg-about scroll-section relative min-h-screen flex items-center"
+      className="bg-image bg-about scroll-section relative min-h-screen flex items-center"
     >
       <div className="container">
         <div className="relative z-[1] flex justify-center h-full flex-col">
