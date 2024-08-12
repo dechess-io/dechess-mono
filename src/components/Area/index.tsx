@@ -8,6 +8,7 @@ import tournamentCup from '@/public/images/area-tournament-cup.svg'
 
 import NextImage from '../NextImage'
 import PlayNow from '../PlayNow'
+import { PinContainer } from '../ui/3d-pin'
 
 const Area = () => {
   return (
@@ -45,84 +46,90 @@ const Area = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center gap-4">
             <div className="flex flex-wrap justify-center gap-2">
-              <div
-                data-aos="fade-right"
-                data-aos-easing="ease-in-sine"
-                className="relative"
-              >
-                <NextImage
-                  src={questMasterBackground}
-                  width={360}
-                  height={300}
-                  alt="dechess-quest-master-background"
-                />
-                <div className="absolute pb-10 z-10 inset-0 flex justify-center items-center">
+              <PinContainer title="Quest Master">
+                <div
+                  data-aos="fade-right"
+                  data-aos-easing="ease-in-sine"
+                  className="relative"
+                >
                   <NextImage
-                    src={questMasterStone}
-                    width={255}
-                    height={193}
-                    alt="dechess-quest-master-stone"
+                    src={questMasterBackground}
+                    width={360}
+                    height={300}
+                    alt="dechess-quest-master-background"
                   />
-
-                  <div className="absolute z-0 duration-[10000ms] animate-ping">
+                  <div className="absolute pb-10 z-10 inset-0 flex justify-center items-center">
                     <NextImage
-                      src={questMasterStoneEffect}
+                      src={questMasterStone}
                       width={255}
                       height={193}
-                      alt="dechess-quest-master-stone-effect"
+                      alt="dechess-quest-master-stone"
                     />
-                  </div>
-                </div>
-                <h3 className="text-xl absolute left-0 right-0 bottom-8 text-center">
-                  Quest Master
-                </h3>
-              </div>
-              <div data-aos="fade-in" className="relative">
-                <NextImage
-                  src={tournamentBackground}
-                  width={360}
-                  height={300}
-                  alt="dechess-tournament-background"
-                />
-                <div className="absolute pb-10 inset-0 flex justify-center items-center">
-                  <NextImage
-                    src={tournamentCup}
-                    width={200}
-                    height={150}
-                    alt="dechess-tournament-cup"
-                  />
 
-                  <div className="absolute z-0 duration-[10000ms] animate-ping">
+                    <div className="absolute z-0 duration-[10000ms] animate-ping">
+                      <NextImage
+                        src={questMasterStoneEffect}
+                        width={255}
+                        height={193}
+                        alt="dechess-quest-master-stone-effect"
+                      />
+                    </div>
+                  </div>
+                  {/* <h3 className="text-xl absolute left-0 right-0 bottom-8 text-center">
+                    Quest Master
+                  </h3> */}
+                </div>
+              </PinContainer>
+              <PinContainer title="Tournament">
+                <div data-aos="fade-in" className="relative">
+                  <NextImage
+                    src={tournamentBackground}
+                    width={360}
+                    height={300}
+                    alt="dechess-tournament-background"
+                  />
+                  <div className="absolute pb-10 inset-0 flex justify-center items-center">
                     <NextImage
-                      src={tournamentCupEffect}
+                      src={tournamentCup}
                       width={200}
                       height={150}
-                      alt="dechess-tourmanent-cup-effect"
+                      alt="dechess-tournament-cup"
                     />
-                  </div>
-                </div>
-                <h3 className="text-xl absolute left-0 right-0 bottom-8 text-center">
-                  Tournament
-                </h3>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-easing="ease-in-sine"
-                className="relative"
-              >
-                <NextImage
-                  src={academyPuzzle}
-                  width={360}
-                  height={300}
-                  alt="dechess-academy-background"
-                />
 
-                <h3 className="text-xl absolute left-0 right-0 bottom-8 text-center">
-                  DeChess Academy
-                </h3>
-              </div>
+                    <div className="absolute z-0 duration-[10000ms] animate-ping">
+                      <NextImage
+                        src={tournamentCupEffect}
+                        width={200}
+                        height={150}
+                        alt="dechess-tourmanent-cup-effect"
+                      />
+                    </div>
+                  </div>
+                  {/* <h3 className="text-xl absolute left-0 right-0 bottom-8 text-center">
+                    Tournament
+                  </h3> */}
+                </div>
+              </PinContainer>
+              <PinContainer title="DeChess Academy">
+                <div
+                  data-aos="fade-left"
+                  data-aos-easing="ease-in-sine"
+                  className="relative"
+                >
+                  <NextImage
+                    src={academyPuzzle}
+                    width={360}
+                    height={300}
+                    alt="dechess-academy-background"
+                  />
+
+                  {/* <h3 className="text-xl absolute left-0 right-0 bottom-8 text-center">
+                    DeChess Academy
+                  </h3> */}
+                </div>
+              </PinContainer>
             </div>
             <PlayNow />
           </div>
