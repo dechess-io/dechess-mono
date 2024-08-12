@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header
       data-aos="zoom-in-down"
-      className="fixed top-0 left-0 z-50 right-0 py-3 bg-black backdrop-blur-lg"
+      className="fixed top-0 left-0 z-[1000] right-0 py-3 bg-black backdrop-blur-lg"
     >
       <div className="container flex items-center justify-between">
         <Link href="#dechess-about">
