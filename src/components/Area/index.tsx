@@ -12,7 +12,7 @@ import { PinContainer } from '../ui/3d-pin'
 
 const Area = () => {
   return (
-    <section className="min-h-[100vh] lg:min-h-[200vh] flex items-center bg-area">
+    <section className="min-h-[100vh] lg:min-h-[200vh] flex items-center bg-image bg-area">
       <div className="container">
         <div className="grid gap-6 justify-center">
           <div className="grid gap-6">
