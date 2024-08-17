@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     'Chess, Chess online, Chess board, Chess Game, Dechess, Chess free, Chess app, Blockchain chess, Crypto chess',
   manifest: '/favicon/site.webmanifest',
   openGraph: {
-    images: [`${baseUrl}/images/preview-image.png`]
+    images: [`${baseUrl}/images/preview-image.jpg`]
   },
   twitter: {
     card: 'summary_large_image',
-    images: `${baseUrl}/images/preview-image.png`
+    images: `${baseUrl}/images/preview-image.jpg`
   }
 }
 
