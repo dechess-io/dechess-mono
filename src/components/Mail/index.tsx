@@ -37,6 +37,7 @@ const Mail = () => {
                 src={bgInput}
                 width={444}
                 height={82}
+                className='w-[300px] lg:w-auto'
                 alt="dechess-bg-mail-input"
               />
 

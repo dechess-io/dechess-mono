@@ -12,14 +12,19 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'Your Site Title',
-    template: '%s | Your Site Title'
+    default: 'Dechess | The Web3 Online Chess Platform for Mastery and Rewards',
+    template: '%s | Dechess'
   },
-  description: 'Your site description',
-  keywords: 'keyword1, keyword2, keyword3',
+  description:
+    'Play Chess Online with Dechess. Dive into the ultimate chess experience where you can master the game, earn rewards, and connect with players worldwide',
+  keywords: 'Chess, Chess online, Chess board, Chess Game, Dechess, Chess free, Chess app, Blockchain chess, Crypto chess',
   manifest: '/favicon/site.webmanifest',
+  openGraph: {
+    images: ['/images/preview-image.png']
+  },
   twitter: {
-    card: 'summary_large_image'
+    card: 'summary_large_image',
+    images: '/images/preview-image.png'
   }
 }
 
@@ -48,7 +53,7 @@ export default function RootLayout({
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />

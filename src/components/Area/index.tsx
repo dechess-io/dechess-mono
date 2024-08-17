@@ -1,139 +1,44 @@
-import academyPuzzle from '@/public/images/area-academy-puzzle.svg'
-import questMasterBackground from '@/public/images/area-quest-master-bg.svg'
-import questMasterStoneEffect from '@/public/images/area-quest-master-stone-effect.svg'
-import questMasterStone from '@/public/images/area-quest-master-stone.svg'
-import tournamentBackground from '@/public/images/area-tournament-bg.svg'
-import tournamentCupEffect from '@/public/images/area-tournament-cup-effect.svg'
-import tournamentCup from '@/public/images/area-tournament-cup.svg'
-
-import NextImage from '../NextImage'
+import Divider from '../Divider'
 import PlayNow from '../PlayNow'
-import { PinContainer } from '../ui/3d-pin'
+import Quest from '../Quest'
 
 const Area = () => {
   return (
-    <section className="min-h-[100vh] lg:min-h-[200vh] flex items-center bg-image bg-area">
-      <div className="container">
+    <section className="min-h-[100vh] lg:min-h-[250vh] flex items-center bg-image bg-area">
+      <div className="container grid gap-20 lg:gap-60">
         <div className="grid gap-6 justify-center">
           <div className="grid gap-6">
-            <h2
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              id="dechess-area"
-              className="scroll-section font-planet text-2xl md:text-3xl md:leading-[4.625rem] text-center"
-            >
-              DeChess Arena
-            </h2>
+            <div className="grid gap-1">
+              <h2
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                id="dechess-area"
+                className="scroll-section font-planet text-2xl md:text-3xl md:leading-[4.625rem] text-center"
+              >
+                DeChess Arena
+              </h2>
+              <div className="flex justify-center">
+                <Divider />
+              </div>
+              <h3 data-aos="fade-in" className="text-2xl font-planet text-center">
+                The Chess of Eternity
+              </h3>
+            </div>
             <div data-aos="fade-in" className="flex justify-center">
               <div className="lg:text-normal font-light max-w-[1000px] text-center grid gap-2">
                 <p>
-                  Welcome to{' '}
-                  <span className="font-medium text-primary-4ff">
-                    Chess Arena
-                  </span>
-                  , the heart of Dechess where strategy and skill converge in
-                  exhilarating chess mastery.
-                </p>
-                <p>
-                  Whether you're a seasoned grandmaster or a curious beginner,
-                  our dynamic platform offers an engaging challenge for players
-                  of all levels.
-                </p>
-                <p>
-                  Dive in and experience the excitement of chess like never
-                  before!
+                  Enter the battleground where the finest tacticians clash in
+                  games of intellect and power, and your strategy determines the
+                  destiny of the ancient world.
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex flex-wrap justify-center gap-2">
-              <PinContainer title="Quest Master">
-                <div
-                  data-aos="fade-right"
-                  data-aos-easing="ease-in-sine"
-                  className="relative"
-                >
-                  <NextImage
-                    src={questMasterBackground}
-                    width={360}
-                    height={300}
-                    alt="dechess-quest-master-background"
-                  />
-                  <div className="absolute pb-10 z-10 inset-0 flex justify-center items-center">
-                    <NextImage
-                      src={questMasterStone}
-                      width={255}
-                      height={193}
-                      alt="dechess-quest-master-stone"
-                    />
-
-                    <div className="absolute z-0 duration-[10000ms] animate-ping">
-                      <NextImage
-                        src={questMasterStoneEffect}
-                        width={255}
-                        height={193}
-                        alt="dechess-quest-master-stone-effect"
-                      />
-                    </div>
-                  </div>
-                  {/* <h3 className="text-xl absolute left-0 right-0 bottom-8 text-center">
-                    Quest Master
-                  </h3> */}
-                </div>
-              </PinContainer>
-              <PinContainer title="Tournament">
-                <div data-aos="fade-in" className="relative">
-                  <NextImage
-                    src={tournamentBackground}
-                    width={360}
-                    height={300}
-                    alt="dechess-tournament-background"
-                  />
-                  <div className="absolute pb-10 inset-0 flex justify-center items-center">
-                    <NextImage
-                      src={tournamentCup}
-                      width={200}
-                      height={150}
-                      alt="dechess-tournament-cup"
-                    />
-
-                    <div className="absolute z-0 duration-[10000ms] animate-ping">
-                      <NextImage
-                        src={tournamentCupEffect}
-                        width={200}
-                        height={150}
-                        alt="dechess-tourmanent-cup-effect"
-                      />
-                    </div>
-                  </div>
-                  {/* <h3 className="text-xl absolute left-0 right-0 bottom-8 text-center">
-                    Tournament
-                  </h3> */}
-                </div>
-              </PinContainer>
-              <PinContainer title="DeChess Academy">
-                <div
-                  data-aos="fade-left"
-                  data-aos-easing="ease-in-sine"
-                  className="relative"
-                >
-                  <NextImage
-                    src={academyPuzzle}
-                    width={360}
-                    height={300}
-                    alt="dechess-academy-background"
-                  />
-
-                  {/* <h3 className="text-xl absolute left-0 right-0 bottom-8 text-center">
-                    DeChess Academy
-                  </h3> */}
-                </div>
-              </PinContainer>
-            </div>
+          <div className="flex justify-center mt-4">
             <PlayNow />
           </div>
         </div>
+        <Quest />
       </div>
     </section>
   )

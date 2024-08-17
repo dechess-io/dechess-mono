@@ -1,7 +1,7 @@
 import React from 'react'
 
-import roadmapRockQ3 from '@/public/images/roadmap-rock-q3.svg'
-import roadmapRockQ4 from '@/public/images/roadmap-rock-q4.svg'
+import roadmapRockQ3 from '@/public/images/roadmap-rock-q3.png'
+import roadmapRockQ4 from '@/public/images/roadmap-rock-q4.png'
 
 import NextImage from '../NextImage'
 import { ContainerScroll } from '../ui/container-scroll-animation'
@@ -11,7 +11,7 @@ const RoadMap = () => {
   return (
     <section className="bg-image bg-roadmap">
       <div className="container">
-        <div className="min-h-[250vh] flex justify-center items-center">
+        <div className="min-h-[200vh] lg:min-h-[250vh] flex justify-center items-center">
           <div className="grid gap-6 lg:gap-20">
             <h2
               id="dechess-roadmap"
@@ -32,13 +32,10 @@ const RoadMap = () => {
                     alt="dechess-roadmap-rock-q3"
                   />
                   <div className="grid gap-4">
-                    <RoadMapItem text="Enhance Game Engine Logic." />
-                    <RoadMapItem text="Puzzles System." />
-                    <RoadMapItem text="Achievement System." />
-                    <RoadMapItem text="NFTs System." />
-                    <RoadMapItem text="In-game Shop: NFTs, Key, Season Pass." />
-                    <RoadMapItem text="Subscription System." />
-                    <RoadMapItem text="Report System." />
+                    <h3 className="text-[40px] font-medium">Q3- DeChess V1</h3>
+                    <RoadMapItem text="Basic Gameplay" />
+                    <RoadMapItem text="ELO/Points/Leaderboard System" />
+                    <RoadMapItem text="Gamification System" />
                   </div>
                 </div>
               </ContainerScroll>
@@ -52,13 +49,11 @@ const RoadMap = () => {
                     alt="dechess-roadmap-rock-q3"
                   />
                   <div className="grid gap-4">
-                    <RoadMapItem text="Enhance Game Engine Logic." />
-                    <RoadMapItem text="Puzzles System." />
-                    <RoadMapItem text="Achievement System." />
-                    <RoadMapItem text="NFTs System." />
-                    <RoadMapItem text="In-game Shop: NFTs, Key, Season Pass." />
-                    <RoadMapItem text="Subscription System." />
-                    <RoadMapItem text="Report System." />
+                    <h3 className="text-[40px] font-medium">Q4- DeChess V2</h3>
+                    <RoadMapItem text="DeChess Smart Contract Development" />
+                    <RoadMapItem text="Puzzles System" />
+                    <RoadMapItem text="Achievement/NFTs System" />
+                    <RoadMapItem text="Game Subscription/Season Pass" />
                   </div>
                 </div>
               </ContainerScroll>
