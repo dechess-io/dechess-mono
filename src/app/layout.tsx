@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 import MainLayout from '@/layout/MainLayout'
+import { baseUrl } from '@/utils/const'
 
 import './globals.css'
 
