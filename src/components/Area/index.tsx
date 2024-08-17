@@ -20,7 +20,7 @@ const Area = () => {
               <div className="flex justify-center">
                 <Divider />
               </div>
-              <h3 data-aos="fade-in" className="text-2xl font-planet text-center">
+              <h3 data-aos="fade-in" className="text-base lg:text-2xl font-planet text-center">
                 The Chess of Eternity
               </h3>
             </div>
