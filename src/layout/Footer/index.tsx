@@ -26,7 +26,8 @@ const Footer = () => {
 
         <div className="flex items-center gap-4">
           <Link
-            href={'#'}
+            href={'https://x.com/dechess_io'}
+            target="_blank"
             className="p-[10px] rounded-full bg-white-fe block"
             style={{ boxShadow: 'inset 0px -3px 0px rgba(0, 0, 0, 0.20)' }}
           >
@@ -38,7 +39,8 @@ const Footer = () => {
             />
           </Link>
           <Link
-            href={'#'}
+            href={'https://t.me/dechess_io'}
+            target="_blank"
             className="p-[10px] rounded-full bg-white-fe block"
             style={{ boxShadow: 'inset 0px -3px 0px rgba(0, 0, 0, 0.20)' }}
           >
@@ -50,7 +52,8 @@ const Footer = () => {
             />
           </Link>
           <Link
-            href={'#'}
+            href={'https://discord.com/invite/NsjZBsSSEq'}
+            target="_blank"
             className="p-[10px] rounded-full bg-white-fe block"
             style={{ boxShadow: 'inset 0px -3px 0px rgba(0, 0, 0, 0.20)' }}
           >
@@ -63,8 +66,22 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex items-center gap-10 mt-10">
-          <Link href={'#'}>Terms of Service</Link>
-          <Link href={'#'}>Privacy Policy</Link>
+          <Link
+            href={
+              'https://docs.dechess.io/dechess-on-telegram/responsibility/terms-of-service'
+            }
+            target="_blank"
+          >
+            Terms of Service
+          </Link>
+          <Link
+            href={
+              'https://docs.dechess.io/dechess-on-telegram/responsibility/dechess-policy'
+            }
+            target="_blank"
+          >
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>

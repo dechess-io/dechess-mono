@@ -18,7 +18,8 @@ const Navbar = () => {
   useEffect(() => {
     Aos.init({
       duration: 1000,
-      once: true
+      once: true,
+      disable: 'mobile'
     })
   }, [])
 
@@ -85,12 +86,22 @@ const Navbar = () => {
               alt="dechess-icn-arrow-down"
             />
           </div>
-          <ul className="group-hover:opacity-100 group-hover:visible transition-all duration-100 lg:opacity-0 lg:invisible lg:absolute z-10 top-[130%] left-0 space-y-2 bg-grey-61/10 rounded py-2 px-4 min-w-[180px] shadow-black-1a shadow">
+          <ul className="group-hover:opacity-100 group-hover:visible transition-all duration-100 lg:opacity-0 lg:invisible lg:absolute z-10 top-[130%] left-0 space-y-2 bg-grey-61/90 rounded py-2 px-4 min-w-[180px] shadow-black-1a shadow">
             <li className="hover:indent-2 transition-all duration-100">
-              <Link href="#">Pith deck</Link>
+              <Link
+                href="https://docs.dechess.io/dechess-on-telegram "
+                target="_blank"
+              >
+                Whitepaper
+              </Link>
             </li>
             <li className="hover:indent-2 transition-all duration-100">
-              <Link href="#">Whitepaper</Link>
+              <Link
+                href="https://docsend.com/view/sfeb7epvs2rwb9as"
+                target="_blank"
+              >
+                Pitch deck
+              </Link>
             </li>
           </ul>
         </li>

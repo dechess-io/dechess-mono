@@ -1,31 +1,37 @@
 import React from 'react'
 
 import Button from '../Button'
+import Divider from '../Divider'
 
 const Academy = () => {
   return (
-    <section id="dechess-academy" className="bg-image bg-academy">
-      <div className="container min-h-screen flex justify-end items-center">
-        <div className="grid gap-10 justify-items-end">
-          <div className="grid gap-6 justify-items-end">
+    <section className="bg-image bg-academy">
+      <div className="container min-h-screen lg:min-h-[150vh] flex justify-end items-center">
+        <div className="grid gap-6">
+          <div className="grid gap-1">
             <h2
-              data-aos="fade-left"
-              data-aos-anchor-placement="top-bottom"
-              id="dechess-area"
-              className="scroll-section font-planet text-2xl md:text-3xl md:leading-[4.625rem] text-center"
+              id="dechess-academy"
+              data-aos="fade-right"
+              className="scroll-section font-planet text-2xl md:text-3xl md:leading-[4.625rem] text-right"
             >
               DeChess Academy
             </h2>
-            <p
-              data-aos="fade-left"
-              data-aos-duration="1500"
-              className="max-w-[537px] lg:text-normal text-right"
-            >
-              We strive to inspire a love of chess, develop critical thinking
-              skills, and create a supportive community of chess enthusiasts.
-            </p>
+            <div className="flex justify-end">
+              <Divider />
+            </div>
+            <h3 className="text-2xl font-planet text-right">
+              The Hierophant's Wisdom
+            </h3>
           </div>
-          <div className="grayscale pointer-events-none cursor-default">
+          <div data-aos="fade-in">
+            <div className="lg:text-normal max-w-[600px] font-light text-right">
+              <p>
+                Under the guidance of the hierophant, ascend from a novice to a
+                master, mastering the ancient game that shaped empires.
+              </p>
+            </div>
+          </div>
+          <div className="grayscale pointer-events-none cursor-default mt-4 flex justify-end">
             <Button>Coming soon</Button>
           </div>
         </div>

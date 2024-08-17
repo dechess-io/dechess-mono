@@ -36,8 +36,8 @@ const About = () => {
             data-aos-duration="1500"
             className="lg:text-normal"
           >
-            Unleash your strategy, perfect your <br /> play, and rise to chess
-            mastery
+            Command your pieces like a Pharaoh in a <br /> game where each move carries
+            the weight of an empire.
           </p>
         </div>
       </div>

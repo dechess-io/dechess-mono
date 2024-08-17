@@ -58,7 +58,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-black text-foreground;
+    @apply bg-black text-foreground overflow-x-hidden;
   }
 
   .scroll-section {
@@ -71,18 +71,26 @@
   }
 
   .bg-about {
-    background-image: url("/images/bg-about.svg");
-    background-position: right;
+    background-image: url("/images/bg-about.png");
+    background-position: left;
+
+    @media screen and (max-width: 1024px) {
+      background-position: center;
+    }
   }
 
   .bg-area {
-    background-image: url("/images/bg-area.svg");
+    background-image: url("/images/bg-area.png");
     background-position: center;
   }
 
   .bg-academy {
     background-image: url("/images/bg-academy.svg");
     background-position: left;
+    
+    @media screen and (max-width: 1024px) {
+      background-position: center;
+    }
   }
 
   .bg-roadmap {
@@ -91,12 +99,23 @@
   }
 
   .bg-mail {
-    background-image: url("/images/bg-mail.svg");
+    background-image: url("/images/bg-mail.png");
     background-position: center;
   }
 
   .bg-footer {
-    background-image: url("/images/bg-footer.svg");
+    background-image: url("/images/bg-footer.png");
     background-position: center;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    z-index: 10;
+    pointer-events: none;
   }
 }

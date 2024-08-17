@@ -8,7 +8,7 @@ import Navbar from '@/components/Navbar'
 import NextImage from '@/components/NextImage'
 import PlayNow from '@/components/PlayNow'
 import { cn } from '@/lib/utils'
-import icnCalendar from '@/public/icons/icn-calendar.svg'
+import icnMenu from '@/public/icons/icn-menu.svg'
 import Logo from '@/public/images/logo.svg'
 
 const Header = () => {
@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header
       data-aos="zoom-in-down"
-      className="fixed top-0 left-0 z-[1000] right-0 py-3 bg-black backdrop-blur-lg"
+      className="fixed top-0 left-0 z-[1000] right-0 py-3 bg-black/20 backdrop-blur-lg"
     >
       <div className="container flex items-center justify-between">
         <Link href="#dechess-about">
@@ -64,7 +64,7 @@ const Header = () => {
             className="block lg:hidden cursor-pointer"
           >
             <NextImage
-              src={icnCalendar}
+              src={icnMenu}
               width={30}
               height={30}
               alt="dechess-icn-calendar"
