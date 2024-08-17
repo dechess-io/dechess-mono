@@ -18,7 +18,7 @@ const Quest = () => {
             Treasure quest
           </h2>
           <Divider />
-          <h3 className="text-2xl font-planet">The Chess of Eternity</h3>
+          <h3 className="text-base lg:text-2xl font-planet">Secretoths of the Sphinx</h3>
         </div>
         <div data-aos="fade-in">
           <div className="lg:text-normal max-w-[600px] font-light">

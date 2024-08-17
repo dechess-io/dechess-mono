@@ -19,7 +19,7 @@ const Academy = () => {
             <div className="flex justify-end">
               <Divider />
             </div>
-            <h3 className="text-2xl font-planet text-right">
+            <h3 className="text-base lg:text-2xl font-planet text-right">
               The Hierophant's Wisdom
             </h3>
           </div>

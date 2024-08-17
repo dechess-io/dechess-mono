@@ -22,7 +22,7 @@ const RoadMap = () => {
               DeChess Roadmap
             </h2>
 
-            <div className="grid gap-6 lg:gap-20">
+            <div className="grid gap-10 lg:gap-20">
               <ContainerScroll titleComponent="">
                 <div className="flex flex-wrap items-center gap-4 lg:gap-40">
                   <NextImage
@@ -32,7 +32,7 @@ const RoadMap = () => {
                     alt="dechess-roadmap-rock-q3"
                   />
                   <div className="grid gap-4">
-                    <h3 className="text-[40px] font-medium">Q3- DeChess V1</h3>
+                    <h3 className="text-xl lg:text-[40px] font-medium">Q3- DeChess V1</h3>
                     <RoadMapItem text="Basic Gameplay" />
                     <RoadMapItem text="ELO/Points/Leaderboard System" />
                     <RoadMapItem text="Gamification System" />
@@ -49,7 +49,7 @@ const RoadMap = () => {
                     alt="dechess-roadmap-rock-q3"
                   />
                   <div className="grid gap-4">
-                    <h3 className="text-[40px] font-medium">Q4- DeChess V2</h3>
+                    <h3 className="text-xl lg:text-[40px] font-medium">Q4- DeChess V2</h3>
                     <RoadMapItem text="DeChess Smart Contract Development" />
                     <RoadMapItem text="Puzzles System" />
                     <RoadMapItem text="Achievement/NFTs System" />
