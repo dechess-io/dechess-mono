@@ -17,14 +17,15 @@ export const metadata: Metadata = {
   },
   description:
     'Play Chess Online with Dechess. Dive into the ultimate chess experience where you can master the game, earn rewards, and connect with players worldwide',
-  keywords: 'Chess, Chess online, Chess board, Chess Game, Dechess, Chess free, Chess app, Blockchain chess, Crypto chess',
+  keywords:
+    'Chess, Chess online, Chess board, Chess Game, Dechess, Chess free, Chess app, Blockchain chess, Crypto chess',
   manifest: '/favicon/site.webmanifest',
   openGraph: {
-    images: ['/images/preview-image.png']
+    images: [`${baseUrl}/images/preview-image.png`]
   },
   twitter: {
     card: 'summary_large_image',
-    images: '/images/preview-image.png'
+    images: `${baseUrl}/images/preview-image.png`
   }
 }
 
