@@ -16,10 +16,13 @@ const Academy = () => {
             >
               DeChess Academy
             </h2>
-            <div className="flex justify-end">
+            <div data-aos="fade-in" className="flex justify-end">
               <Divider />
             </div>
-            <h3 className="text-base lg:text-2xl font-planet text-right">
+            <h3
+              data-aos="fade-right"
+              className="text-base lg:text-2xl font-planet text-right"
+            >
               The Hierophant's Wisdom
             </h3>
           </div>

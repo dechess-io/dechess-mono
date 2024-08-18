@@ -12,7 +12,7 @@ const RoadMap = () => {
     <section className="bg-image bg-roadmap">
       <div className="container">
         <div className="min-h-[200vh] lg:min-h-[250vh] flex justify-center items-center">
-          <div className="grid gap-6 lg:gap-20">
+          <div className="grid gap-10 lg:gap-20">
             <h2
               id="dechess-roadmap"
               data-aos="fade-down"

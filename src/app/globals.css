@@ -101,6 +101,7 @@
   .bg-mail {
     background-image: url("/images/bg-mail.png");
     background-position: center;
+    background-size: contain;
   }
 
   .bg-footer {
