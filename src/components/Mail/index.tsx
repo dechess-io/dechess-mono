@@ -66,7 +66,7 @@ const Mail = () => {
                   alt="dechess-bg-mail-input"
                 />
 
-                <div className="absolute inset-0 flex justify-center items-center px-4 lg:px-10 font-planet">
+                <div className="absolute inset-0 flex justify-center items-center px-4 lg:px-10">
                   <input
                     onChange={(e) => setEmail(e.target.value)}
                     spellCheck="false"
