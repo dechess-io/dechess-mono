@@ -85,7 +85,7 @@
   }
 
   .bg-academy {
-    background-image: url("/images/bg-academy.svg");
+    background-image: url("/images/bg-academy.png");
     background-position: left;
     
     @media screen and (max-width: 1024px) {
@@ -94,7 +94,7 @@
   }
 
   .bg-roadmap {
-    background-image: url("/images/bg-roadmap.svg");
+    background-image: url("/images/bg-roadmap.png");
     background-position: center;
   }
 
