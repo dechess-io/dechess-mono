@@ -16,12 +16,12 @@ const Mail = () => {
     e.preventDefault()
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!email) {
-      toast.error('Email is required')
+      toast.error('Email is required!')
       return
     }
 
     if (!emailRegex.test(email)) {
-      toast.error('Email is not valid')
+      toast.error('Email is not valid!')
       return
     }
   }
