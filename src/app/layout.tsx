@@ -3,11 +3,13 @@ import { Space_Grotesk } from 'next/font/google'
 import Head from 'next/head'
 
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { ToastContainer } from 'react-toastify'
 
 import MainLayout from '@/layout/MainLayout'
 import { baseUrl } from '@/utils/const'
 
 import './globals.css'
+import 'react-toastify/dist/ReactToastify.css'
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
@@ -62,6 +64,7 @@ export default function RootLayout({
       </Head>
       <body className={`cz-shortcut-listen ${spaceGrotesk.className}`}>
         <MainLayout>{children}</MainLayout>
+        <ToastContainer autoClose={1500} theme="dark" />
       </body>
       <GoogleAnalytics gaId="G-S5V0EXRDTL" />
     </html>

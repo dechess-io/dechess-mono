@@ -50,10 +50,10 @@ const Button: React.FC<
         src={bgButton}
         width={237}
         height={74}
-        className="w-[180px] lg:w-full lg:h-full"
+        className="w-[150px] lg:w-full lg:h-full"
         alt="dechess-btn-background"
       />
-      <span className="absolute inset-0 z-[1] text-black-1a flex justify-center items-center">
+      <span className="absolute inset-0 z-[1] text-black-1a flex justify-center items-center text-base lg:text-[24px]">
         {loading ? <Icons.spinner className="animate-spin" size={20} /> : null}{' '}
         {children}
       </span>
