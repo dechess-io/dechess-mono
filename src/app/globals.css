@@ -71,7 +71,7 @@
   }
 
   .bg-about {
-    background-image: url("/images/bg-about.png");
+    background-image: url("https://d2fazpc35cwwa4.cloudfront.net/images/bg-about.png");
     background-position: left;
 
     @media screen and (max-width: 1024px) {
@@ -80,12 +80,12 @@
   }
 
   .bg-area {
-    background-image: url("/images/bg-area.png");
+    background-image: url("https://d2fazpc35cwwa4.cloudfront.net/images/bg-area.png");
     background-position: center;
   }
 
   .bg-academy {
-    background-image: url("/images/bg-academy.svg");
+    background-image: url("https://d2fazpc35cwwa4.cloudfront.net/images/bg-academy.svg");
     background-position: left;
     
     @media screen and (max-width: 1024px) {
@@ -94,18 +94,18 @@
   }
 
   .bg-roadmap {
-    background-image: url("/images/bg-roadmap.svg");
+    background-image: url("https://d2fazpc35cwwa4.cloudfront.net/images/bg-roadmap.svg");
     background-position: center;
   }
 
   .bg-mail {
-    background-image: url("/images/bg-mail.png");
+    background-image: url("https://d2fazpc35cwwa4.cloudfront.net/images/bg-mail.png");
     background-position: center;
     background-size: contain;
   }
 
   .bg-footer {
-    background-image: url("/images/bg-footer.png");
+    background-image: url("https://d2fazpc35cwwa4.cloudfront.net/images/bg-footer.png");
     background-position: center;
   }
 
