@@ -1,5 +1,3 @@
-import { LinkPreview } from '../ui/link-preview'
-
 const About = () => {
   return (
     <section
@@ -13,28 +11,10 @@ const About = () => {
             className="font-planet text-2xl md:text-3xl md:leading-[4.625rem]"
           >
             DeChess, <br /> Where{' '}
-            <LinkPreview
-              url=""
-              isStatic
-              imageSrc={'/images/banner.svg'}
-              className="font-bold"
-            >
-              <span className="bg-gradient-to-r from-yellow-17 to-yellow-43 bg-clip-text text-transparent">
-                Brilliant
-              </span>{' '}
-              <br />{' '}
-            </LinkPreview>{' '}
-            <LinkPreview
-              url=""
-              imageSrc={'/images/cover.svg'}
-              isStatic
-              className="font-bold"
-            >
-              <span className="text-yellow-17">
-                Moves
-              </span>{' '}
-            </LinkPreview>
-            Begin
+            <span className="bg-gradient-to-r from-yellow-17 to-yellow-43 bg-clip-text text-transparent">
+              Brilliant
+            </span>{' '}
+            <br /> <span className="text-yellow-17">Moves</span> Begin
           </h1>
           <p
             data-aos="fade-right"
