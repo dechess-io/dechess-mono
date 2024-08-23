@@ -1,6 +1,6 @@
 import React from 'react'
 
-import icnDot from '@/public/icons/icn-dot.svg'
+import icnDot from '@/public/icons/icn-dot.png'
 
 import NextImage from '../NextImage'
 
