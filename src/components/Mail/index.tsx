@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { toast } from 'react-toastify'
 
 import bgInput from '@/public/images/bg-input.svg'
+import { apiUrl } from '@/utils/const'
 
 import Button from '../Button'
 import NextImage from '../NextImage'
@@ -12,7 +13,7 @@ import NextImage from '../NextImage'
 const Mail = () => {
   const [email, setEmail] = useState('')
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!email) {
@@ -23,6 +24,27 @@ const Mail = () => {
     if (!emailRegex.test(email)) {
       toast.error('Email is not valid!')
       return
+    }
+
+    try {
+      const response = await fetch(`${apiUrl}/landing-page/email-support`, {
+        method: 'POST',
+        body: JSON.stringify({ email }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        toast.success(data.message || 'Subscribed successfully!')
+        setEmail('')
+      } else {
+        toast.error(data.message || 'Subscription failed!')
+      }
+    } catch (error) {
+      toast.error('An error occurred. Please try again.')
     }
   }
 
@@ -69,9 +91,10 @@ const Mail = () => {
                 <div className="absolute inset-0 flex justify-center items-center px-4 lg:px-10">
                   <input
                     onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                     spellCheck="false"
                     type="email"
-                    className=" bg-transparent outline-none w-full pt-4 pb-4 placeholder:text-grey-61 text-xs lg:text-base"
+                    className=" bg-transparent outline-none w-full pt-3 pb-4 placeholder:text-grey-61 text-xs lg:text-base"
                     placeholder="Type your email"
                   />
                 </div>

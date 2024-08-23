@@ -9,7 +9,7 @@ import NextImage from '@/components/NextImage'
 import PlayNow from '@/components/PlayNow'
 import { cn } from '@/lib/utils'
 import icnMenu from '@/public/icons/icn-menu.svg'
-import Logo from '@/public/images/logo.svg'
+import Logo from '@/public/images/logo.png'
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false)
