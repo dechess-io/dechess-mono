@@ -64,6 +64,10 @@ const config = {
         },
         white: {
           fe: '#FFFEFE'
+        },
+        yellow: {
+          43: '#E3C043',
+          17: '#B18617'
         }
       },
       borderRadius: {

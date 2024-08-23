@@ -19,7 +19,10 @@ const About = () => {
               imageSrc={'/images/banner.svg'}
               className="font-bold"
             >
-              <span className="text-primary-4ff">Brilliant</span> <br />{' '}
+              <span className="bg-gradient-to-r from-yellow-17 to-yellow-43 bg-clip-text text-transparent">
+                Brilliant
+              </span>{' '}
+              <br />{' '}
             </LinkPreview>{' '}
             <LinkPreview
               url=""
@@ -27,7 +30,9 @@ const About = () => {
               isStatic
               className="font-bold"
             >
-              <span className="text-primary-4ff">Moves</span>{' '}
+              <span className="text-yellow-17">
+                Moves
+              </span>{' '}
             </LinkPreview>
             Begin
           </h1>
@@ -36,8 +41,8 @@ const About = () => {
             data-aos-duration="1500"
             className="lg:text-normal"
           >
-            Command your pieces like a Pharaoh in a <br /> game where each move carries
-            the weight of an empire.
+            Command your pieces like a Pharaoh in a <br /> game where each move
+            carries the weight of an empire.
           </p>
         </div>
       </div>
